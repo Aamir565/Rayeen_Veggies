@@ -1,0 +1,86 @@
+body{
+    background-color: #002B5B;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #002B5B;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex: content;
+}
+.logo{
+    display: flex;
+    padding-left: 10% ;
+}
+.heading{
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 2px;
+    padding: 2px;
+    width: fit-content;
+}
+.horizontal-nav{
+    position: absolute;
+    right: 10%; 
+}
+.horizontal-li{
+    border: 1px solid white;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar{
+    color: white;
+    position: absolute;
+    right: 10%;
+    font-size: 3rem;
+    margin: 15px;
+    visibility: hidden;
+}
+.vertical-nav{
+    margin: 100px auto;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    visibility: hidden;
+}
+.vertical-li{
+    border: 1px solid white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 25px;
+    padding: 0 20px;
+    margin: 0 10px;
+}
+a:hover{
+    color: aqua;
+}
+
+@media screen and (max-width:900px) {
+    .horizontal-nav{
+        visibility: hidden;
+    }
+    .vertical-nav{
+        
+        visibility: visible;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+
+}
